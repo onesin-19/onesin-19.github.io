@@ -2269,6 +2269,15 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
+/* three */
+
+	#three {
+		background: url("images/overlay.png"), url("../../images/three.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
 /* Contact */
 
 	#contact {
@@ -2310,3 +2319,452 @@ input, select, textarea {
 			}
 
 		}
+
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		max-width: calc(100% - 50px);
+		width: 1200px;
+	}
+
+
+		@media screen and (max-width: 1680px) {
+
+			.container {
+				width: 1200px;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.container {
+				width: 960px;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.container {
+				width: 100%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.container {
+				width: 100%;
+				max-width: calc(100% - 30px);
+			}
+
+		}
+
+
+/* Row */
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	align-items: stretch;
+}
+
+	.row > * {
+		box-sizing: border-box;
+	}
+
+	.row > .col-4 {
+		width: 33.33333%;
+	}
+
+	.row > .col-5 {
+		width: 41.66667%;
+	}
+
+	.row > .col-7 {
+		width: 58.33333%;
+	}
+
+	.row > .col-8 {
+		width: 66.66667%;
+	}
+	
+	.row > .col-12 {
+		width: 100%;
+	}
+
+	.row {
+		margin-top: -25px;
+		margin-left: -25px;
+	}
+
+		.row > * {
+			padding: 25px 0 0 25px;
+		}
+
+
+	@media screen and (max-width: 1680px) {
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			align-items: stretch;
+		}
+
+			.row > * {
+				box-sizing: border-box;
+			}
+
+			.row > .col-4-xlarge {
+				width: 33.33333%;
+			}
+
+			.row > .col-5-xlarge {
+				width: 41.66667%;
+			}
+
+			.row > .col-12-xlarge {
+				width: 100%;
+			}
+
+
+			.row {
+				margin-top: -25px;
+				margin-left: -25px;
+			}
+
+				.row > * {
+					padding: 25px 0 0 25px;
+				}
+
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			align-items: stretch;
+		}
+
+			.row > * {
+				box-sizing: border-box;
+			}
+
+			.row > .col-4-large {
+				width: 33.33333%;
+			}
+
+			.row > .col-5-large {
+				width: 41.66667%;
+			}
+
+			.row > .col-7-large {
+				width: 58.33333%;
+			}
+
+			.row > .col-8-large {
+				width: 66.66667%;
+			}
+
+			.row > .col-12-large {
+				width: 100%;
+			}
+
+			.row {
+				margin-top: -25px;
+				margin-left: -25px;
+			}
+
+				.row > * {
+					padding: 25px 0 0 25px;
+				}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			align-items: stretch;
+		}
+
+			.row > * {
+				box-sizing: border-box;
+			}
+
+
+			.row > .col-4-medium {
+				width: 33.33333%;
+			}
+
+			.row > .col-5-medium {
+				width: 41.66667%;
+			}
+
+
+			.row > .col-12-medium {
+				width: 100%;
+			}
+			.row {
+				margin-top: -25px;
+				margin-left: -25px;
+			}
+
+				.row > * {
+					padding: 25px 0 0 25px;
+				}
+
+			
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			align-items: stretch;
+		}
+
+			.row > * {
+				box-sizing: border-box;
+			}
+
+			.row > .col-4-small {
+				width: 33.33333%;
+			}
+
+			.row > .col-5-small {
+				width: 41.66667%;
+			}
+
+			.row > .col-12-small {
+				width: 100%;
+			}
+
+			.row {
+				margin-top: -15px;
+				margin-left: -15px;
+			}
+
+				.row > * {
+					padding: 15px 0 0 15px;
+				}
+
+
+	}
+/*article*/
+	/*section>article > :last-child,
+	section>article:last-child {
+		margin-bottom: 0;
+	}*/
+
+/* Image */
+
+	.image {
+		display: inline-block;
+		position: relative;
+	}
+
+		.image img {
+			display: block;
+			width: 100%;
+		}
+
+		.image.fit {
+			display: block;
+			width: 100%;
+		}
+
+		.image.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.image.left {
+			float: left;
+			margin: 0 2em 2em 0;
+		}
+
+		.image.centered {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.centered img {
+				margin: 0 auto;
+				width: auto;
+			}
+
+/* Wrappers */
+
+	.wrapper {
+		/*background-image: url("images/bg.png");
+		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		padding: 8em 0 8em 0;
+		text-align: center;*/
+	}
+
+		/*.wrapper.style1 {
+			background-image: none;
+			background-color: #fff;
+		}*/
+
+/* Articles */
+	section > article {
+		margin-bottom: 0;
+	}
+	/*#top {
+		padding: 10em 0 10em 0;
+		text-align: left;
+	}*/
+
+		#top .image {
+			border-radius: 100%;
+			width: 20em;
+			height: 20em;
+			margin: 0;
+		}
+
+			#top .image img {
+				border-radius: 100%;
+			}
+
+		#top h2 {
+			margin-top: 0.35em;
+		}
+
+		#top p {
+			font-size: 1.5em;
+			line-height: 1.75em;
+		}
+
+			#top p a {
+				color: inherit;
+			}
+
+
+/* Large */
+
+	@media screen and (max-width: 1280px) {
+
+
+		/* Wrappers */
+
+			/*.wrapper {
+				padding: 5em 0 5em 0;
+				text-align: center;
+			}*/
+
+
+		/* Articles */
+
+			#top {
+				padding: 8em 0;
+			}
+
+				#top .image {
+					width: 24em;
+					height: 24em;
+					margin: 0;
+				}
+
+	}
+
+/* Medium */
+
+	@media screen and (max-width: 980px) {
+
+		/* Articles */
+
+			#top {
+				text-align: center;
+				padding: 5em 0;
+			}
+
+				#top .image {
+					margin: 0 auto 2em auto;
+				}
+
+	}
+
+	/* Small */
+
+	@media screen and (max-width: 736px) {
+
+				
+		/* Section/Article */
+
+			article {
+				clear: both;
+			}
+
+		/* Wrappers */
+
+			.wrapper {
+				padding: 3em 0;
+				text-align: center;
+			}
+
+		/* Articles */
+
+			#top {
+				padding: 3em 0;
+			}
+
+				#top .image {
+					width: 15em;
+					height: 15em;
+					margin-bottom: 0;
+				}
+
+				#top p {
+					font-size: 1em;
+				}
+
+
+	}
+	
+	/* Small */
+
+	@media screen and (max-width: 736px) {
+
+		/* Section/Article */
+
+			article {
+				clear: both;
+			}
+
+		/* Wrappers */
+
+			.wrapper {
+				padding: 3em 0;
+				text-align: center;
+			}
+
+		/* Articles */
+
+			#top {
+				padding: 3em 0;
+			}
+
+				#top .image {
+					width: 15em;
+					height: 15em;
+					margin-bottom: 0;
+				}
+
+				#top p {
+					font-size: 1em;
+				}
+	}
